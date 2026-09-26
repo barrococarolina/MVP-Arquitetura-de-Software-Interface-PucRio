@@ -62,7 +62,7 @@ async function carregarAlunos() {
     const busca = $("buscaAluno").value.trim();
     const turmaId = $("filtroTurma").value;
     const ordenar = $("ordenacaoAluno").value;
-    if (busca) params.set("busca", busca);
+    if (busca) params.set("buscaNome", busca);
     if (turmaId) params.set("turmaId", turmaId);
     if (ordenar) params.set("ordenar", ordenar);
 
